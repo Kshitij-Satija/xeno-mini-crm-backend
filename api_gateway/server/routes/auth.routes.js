@@ -17,9 +17,9 @@ router.get(
   "/google/callback",
   passport.authenticate("google", { failureRedirect: `${FRONTEND_URI}/login` }),
   (req, res) => {
-    console.log("✅ Google OAuth callback hit");
-    console.log("🔑 req.user:", req.user);
-    console.log("📝 req.session after login:", req.session);
+    //console.log("✅ Google OAuth callback hit");
+    //console.log("🔑 req.user:", req.user);
+    //console.log("📝 req.session after login:", req.session);
 
     // At this point, req.user should be populated and stored in session.
     // If you don't see req.user here, passport's serializeUser is not being called.
