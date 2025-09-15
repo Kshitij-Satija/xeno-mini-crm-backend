@@ -31,6 +31,8 @@ app.use(
 
 app.use(cookieParser());
 
+app.set("trust proxy", 1);
+
 // Mongo-backed sessions (persistent + cross-site ready)
 app.use(
   session({
