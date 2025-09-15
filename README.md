@@ -67,7 +67,7 @@ The system follows a microservices + event-driven architecture.
 
 ## 🖼️ Architecture Diagram
 
-(docs/Xeno_Architecture.png)
+![This the architecture.](docs/Xeno_Architecture.png)
 
 ## ⚙️ Tech Stack
 
@@ -187,4 +187,5 @@ The system follows a microservices + event-driven architecture.
 ## 🎥 Demo
 
 - **Deployed Project**: https://xeno-minicrm.vercel.app/
+
 - **Demo Video**: https://www.youtube.com/watch?v=q8ut8Zgsujg
