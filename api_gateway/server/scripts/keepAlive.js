@@ -7,6 +7,10 @@ const backendUrls = [
   process.env.BACKEND_URL || "https://xeno-mini-crm-api-gateway.onrender.com/api/health",
   "https://xeno-mini-crm-customer-service.onrender.com/health",
   "https://xeno-mini-crm-campaign-service.onrender.com/health",
+  "https://xeno-mini-crm-customer-consumer.onrender.com/health",
+  "https://xeno-mini-crm-campaign-consumer.onrender.com/health",
+  "https://xeno-mini-crm-vendor-api.onrender.com/health"
+
 ];
 
 const keepAlive = () => {

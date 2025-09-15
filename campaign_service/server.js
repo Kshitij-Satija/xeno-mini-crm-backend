@@ -13,7 +13,7 @@ validateEnv();
 
 const app = express();
 app.use(cors({
-  origin: [process.env.API_GATEWAY_URI, process.env.FRONTEND_URI],
+  origin: [process.env.API_GATEWAY_URI, process.env.FRONTEND_URI, process.env.DUMMY_VENDOR_URI],
   credentials: true,
   allowedHeaders: ["Content-Type", "X-User-Id", "X-User-Email", "X-Proxied", "x-user-id", "x-user-email"]
 

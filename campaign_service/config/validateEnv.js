@@ -3,7 +3,7 @@ module.exports = () => {
     "CAMPAIGN_DB_URI",           // MongoDB URI for Campaigns
     "CUSTOMER_DB_URI",           // MongoDB URI for Customers (used in campaign consumer)
     "RABBITMQ_URI",              // RabbitMQ connection string
-        // Dummy vendor API endpoint for sending messages  "VENDOR_SERVICE_URI",   
+      "DUMMY_VENDOR_URI",  // Dummy vendor API endpoint for sending messages  "VENDOR_SERVICE_URI",   
      // Public URL or gateway callback for delivery receipts "CAMPAIGN_SERVICE_PUBLIC_URL",
     "PORT",                      // Service port
     "NODE_ENV",                   // Environment (development/production)

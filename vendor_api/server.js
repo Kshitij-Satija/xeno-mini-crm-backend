@@ -8,9 +8,14 @@ const cors = require("cors");
 
 const app = express();
 
-// ✅ enable CORS from any origin
-app.use(cors({ origin: "*" }));
+// enable CORS from any origin
+app.use(cors({ origin: true, credentials: true }));
 app.use(bodyParser.json());
+
+app.get("/health", (req, res) => {
+  console.log("Vendor API health check hit");
+  res.json({ status: "ok", service: "vendor-api" });
+});
 
 // Simulate vendor sending messages
 app.post("/send", async (req, res) => {
