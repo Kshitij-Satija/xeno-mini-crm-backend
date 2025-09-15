@@ -111,11 +111,7 @@ The system follows a microservices + event-driven architecture.
 
 4. Start RabbitMQ and MongoDB locally. Run command for official RabbitMQ image on docker:
    ```
-   docker run -d --hostname rabbitmq-host \
-  --name rabbitmq \
-  -p 5672:5672 \
-  -p 15672:15672 \
-  rabbitmq:3-management
+   docker run -d --hostname rabbitmq-host --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
    ```
 
 5. Configure environment variables:
@@ -189,3 +185,4 @@ The system follows a microservices + event-driven architecture.
 - **Deployed Project**: https://xeno-minicrm.vercel.app/
 
 - **Demo Video**: https://www.youtube.com/watch?v=q8ut8Zgsujg
+
