@@ -10,6 +10,7 @@ const MongoStore = require("connect-mongo");
 const connectDB = require("./config/db");
 const validateEnv = require("./config/validateEnv");
 require("./config/passport");
+const keepAlive = require("./scripts/keepAlive"); 
 
 const authRoutes = require("./routes/auth.routes");
 const dashboardRoutes = require("./routes/dashboard.routes");
@@ -106,6 +107,7 @@ app.use("/api/orders", ...proxyTo("/orders", process.env.CUSTOMER_SERVICE_URI));
 app.use("/api/campaigns", ...proxyTo("/campaigns", process.env.CAMPAIGN_SERVICE_URI));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () =>
-  console.log(`API Gateway running on PORT: ${PORT}`)
-);
+app.listen(PORT, () => {
+  console.log(`API Gateway running on PORT: ${PORT}`);
+ keepAlive();
+});
